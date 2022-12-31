@@ -1,0 +1,33 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<form action="enterSafeEntry.php" method="post">
+location:  <input type="text" name="location"><br> NRIC (fake one): <input type="text" name="NRIC"><br>
+<input type="submit">
+</form>
+</body>
+</html>
+
+<!--
+<p style="color:red;" id="report"></p>
+<h1 id="sql report"></h1>
+<script>
+    testLocation = "<?php echo $_POST["location"]; ?>";
+    testNRIC = "<?php echo $_POST["NRIC"]; ?>";
+    console.log(<?php $_POST["location"]; ?>);
+    if(testLocation === "" || testNRIC === ""){
+        document.getElementById("report").innerHTML = '<font size="10">Input cannot be null</font>';
+    }else{
+        document.getElementById("report").innerHTML = "input is acceptable";
+        <?php
+        $conn = mysqli_connect('bridge2.mysql.guardedhost.com','bridge2_cdy3test','2d-Dy4wqhm8Q','bridge2_cdy3test');
+        if($conn){
+                echo 'document.getElementById("sql report").innerHTML = "connection on";';
+        }
+        ?>
+    }
+</script>
+-->
